@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+/*-- Reset --*/
+html, body {
+  overflow-x: hidden;
+  height: 100%; 
+  width: 100%;
+  color: #222;
+  background: #FAF6F2;
+  font-size: large;
+  font-family: 'nunito', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.text-primary {
+  color:#978c7b!important;
+}
+
+.text-secondary {
+  color: #222;
+}
+
+.btn {
+  background-color:#aaa091;
+  border: 0px solid hsl(18, 41%, 43%);
+}
+
+.btn:hover {
+  background-color: hsl(18, 41%, 43%);
+  border: 0px hsl(18, 41%, 43%);(110, 49, 5)
+}
+
+.container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+  /*============= NAVIGATION =============*/
+
+.navbar {
+  padding: 0rem;
+  background: rgb(251, 237, 224);
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+}
+
+.navbar-nav li {
+  text-align: center;
+  padding-right: 1.5rem;
+}
+
+.navbar-brand img {
+  height: 5.5rem;
+}
+
+.navbar-brand {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-right: 40px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+  color: #222 !important;
+}
+
+.nav-link:hover {
+  color: hsl(18, 41%, 43%)!important;
+}
+
+/*============= CAROUSEL =============*/
+
+.carousel {
+  height: calc(100vh - 5.5rem);
+}
+
+.carousel-item, .carousel-inner {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-indicators li {
+  width: 60px;
+  height: 8px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+/*============= SOCIAL MEDIA STICKY BAR =============*/
+
+.jumbotron {
+  padding-top: calc((88px - 49px)/2);
+  padding-bottom: calc((88px - 49px)/2);
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow:0 .5rem .5rem rgba(0, 0, 0, .1);
+  
+}
+ul.social {
+  list-style-type: none; 
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+}
+ul.social li {
+  margin: 0 auto
+}
+
+.fab fa-facebook:hover {
+  color: hsl(18, 41%, 43%)!important;
+}
+
+.fab fa-instagram-square:hover {
+  color: hsl(18, 41%, 43%)!important;
+}
+
+.fab fa-linkedin:hover {
+  color: hsl(18, 41%, 43%)!important;
+}
+
+/* ===== À PROPOS ===== */
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.5)!important;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+}
+
+.about {
+  padding-top: 10rem;
+}
+
+/* ===== SERVICES ET TARIFS ===== */
+
+.fa-spa, .fa-clock, .fa-suitcase, .fa-gift, .fa-bed, .fa-mouse, .fa-business-time, .fa-algolia, .fa-temperature-high, .fa-hand-holding-water {
+  font-size: 4em;
+  margin: 1rem;
+}
+
+.fa-spa, .fa-bed {
+  color: hsl(140, 36%, 44%);
+}
+
+.fa-clock, .fa-mouse {
+  color: hsl(279, 18%, 47%);
+}
+
+.fa-suitcase, .fa-business-time {
+  color: hsl(202, 41%, 40%)
+}
+
+.fa-gift, .fa-algolia {
+  color: hsl(18, 41%, 43%);
+}
+
+.fa-temperature-high {
+  color: rgb(202, 129, 100)
+}
+
+.fa-hand-holding-water {
+  color: rgb(74, 149, 209)
+}
+
+/* ===== MASSAGE POUR ENTREPRISE ===== */
+
+.card {
+  border-radius: 1.5rem;
+  background-color: #FAF6F2;
+}
+
+/*===== FIXED BACKGROUND IMG =====*/
+
+.fixed-background {
+  padding: 12rem 0;
+  border-top: .05rem solid black;
+  border-bottom: .05rem solid black;
+  margin-bottom: 2px;
+}
+.fixed {
+  background-image: url('../images/fixed.jpg');
+  position: fixed;
+  pointer-events:none;
+}
+
+/*===== COVID =====*/
+
+.covid {
+  padding-top: 5rem;
+}
+
+/*============= FOOTER =============*/
+
+
+
+/*============= SOCKET =============*/
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+}
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {
+
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+.display-4 {
+  font-size: 3rem;
+}
+
+
+}
+/* Devices under 576px (sm) */
+@media (max-width: 575.98px) {
+
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
